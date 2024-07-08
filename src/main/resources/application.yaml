@@ -1,3 +1,13 @@
 spring:
   application:
     name: boki-spring-actuator1
+management:
+  endpoint: # ???
+    health:
+      enabled: true
+    beans:
+      enabled: false
+    caches:
+      enabled: true
+    heapdump:
+      enabled: true
