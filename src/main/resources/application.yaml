@@ -11,3 +11,9 @@ management:
       enabled: true
     heapdump:
       enabled: true
+  endpoints: # ??
+    web:
+      exposure:
+        include: "*"
+        exclude:
+          - beans
