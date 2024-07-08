@@ -2,10 +2,11 @@ spring:
   application:
     name: boki-spring-actuator1
 management:
-  endpoints: # ??
+  endpoints: # 노출
     web:
-      cors:
-        allowed-origins: http://test1.com, http://test2.com
-        allowed-methods: GET
       exposure:
         include: "*"
+  endpoint: # 활성화
+    health:
+#      show-components: always
+      show-details: always
