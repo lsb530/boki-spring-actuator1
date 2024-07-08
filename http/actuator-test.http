@@ -1,0 +1,18 @@
+@myhost = localhost:8080
+// @no-log
+// @no-cookie-jar
+
+### GET actuator endpoints
+GET http://{{myhost}}/actuator
+
+### GET actuator custom endpoint
+GET http://{{myhost}}/actuator/my-library-info?includeVersion=true
+
+### POST actuator custom endpoint
+POST http://{{myhost}}/actuator/my-library-info
+Content-Type: application/json
+
+{
+  "name": "tests",
+  "enableSomething": false
+}
