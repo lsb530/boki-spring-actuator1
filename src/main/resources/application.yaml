@@ -4,5 +4,8 @@ spring:
 management:
   endpoints: # ??
     web:
+      cors:
+        allowed-origins: http://test1.com, http://test2.com
+        allowed-methods: GET
       exposure:
         include: "*"
