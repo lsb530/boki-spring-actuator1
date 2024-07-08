@@ -5,12 +5,20 @@ management:
   endpoint: # ???
     health:
       enabled: true
+      cache:
+        time-to-live: 1d # ??
     beans:
       enabled: false
+      cache:
+        time-to-live: 1d
     caches:
       enabled: true
+      cache:
+        time-to-live: 2s
     heapdump:
       enabled: true
+      cache:
+        time-to-live: 10s
   endpoints: # ??
     web:
       exposure:
