@@ -21,3 +21,7 @@ management:
       enabled: true
     os:
       enabled: true
+
+info:
+  name: boki
+  age: 30
