@@ -23,5 +23,7 @@ management:
       enabled: true
 
 info:
-  name: boki
-  age: 30
+  my-app:
+    any-key: someValue
+    group-id: "@project.groupId@"
+    artifact-id: "@project.artifactId@"
