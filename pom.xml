@@ -28,6 +28,7 @@
     </scm>
     <properties>
         <java.version>17</java.version>
+        <custom.value>I'm handsome</custom.value>
     </properties>
     <dependencies>
         <dependency>

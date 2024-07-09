@@ -27,3 +27,4 @@ info:
     any-key: someValue
     group-id: "@project.groupId@"
     artifact-id: "@project.artifactId@"
+    custom: "@custom.value@"
