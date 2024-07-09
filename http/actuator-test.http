@@ -22,3 +22,6 @@ GET http://{{myhost}}/actuator/my-library-info/test123
 
 ### GET actuator custom endpoint - Multi Path Variable
 GET http://{{myhost}}/actuator/my-library-info/test1234/world5678
+
+### Health Endpoint
+GET http://{{myhost}}/actuator/health
