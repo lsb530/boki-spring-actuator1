@@ -25,3 +25,9 @@ GET http://{{myhost}}/actuator/my-library-info/test1234/world5678
 
 ### Health Endpoint
 GET http://{{myhost}}/actuator/health
+
+### Info Endpoint
+GET http://{{myhost}}/actuator/info
+
+### Env Endpoint
+GET http://{{myhost}}/actuator/env

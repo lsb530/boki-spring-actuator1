@@ -10,6 +10,8 @@ management:
     health:
 #      show-components: always
       show-details: always
+    env:
+      show-values: always # env 변수 노출
   info:
     env:
       enabled: true
