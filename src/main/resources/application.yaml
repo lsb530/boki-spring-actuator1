@@ -17,6 +17,7 @@ management:
       enabled: true
     git:
       enabled: true
+      mode: full
     build:
       enabled: true
     java:
