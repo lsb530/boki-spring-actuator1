@@ -1,4 +1,4 @@
-package com.boki.bokispringactuator1.custom;
+package com.boki.bokispringactuator1.endpoint;
 
 import lombok.Data;
 
