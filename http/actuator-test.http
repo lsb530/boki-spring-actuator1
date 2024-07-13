@@ -31,3 +31,12 @@ GET http://{{myhost}}/actuator/info
 
 ### Env Endpoint
 GET http://{{myhost}}/actuator/env
+
+### Metric Endpoint
+GET http://{{myhost}}/actuator/metrics
+
+### Custom Metric Endpoint1
+GET http://{{myhost}}/actuator/metrics/my.stock
+
+### Custom Metric Endpoint2
+GET http://{{myhost}}/actuator/metrics/my.product
