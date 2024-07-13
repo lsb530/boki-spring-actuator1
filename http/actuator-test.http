@@ -40,3 +40,9 @@ GET http://{{myhost}}/actuator/metrics/my.stock
 
 ### Custom Metric Endpoint2
 GET http://{{myhost}}/actuator/metrics/my.product
+
+### Call Count EndPoint
+GET http://{{myhost}}/counter/req
+
+### Custom Metric Counter
+GET http://{{myhost}}/actuator/metrics/my.http.request
