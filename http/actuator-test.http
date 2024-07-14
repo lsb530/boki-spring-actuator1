@@ -94,3 +94,10 @@ GET http://{{myhost}}/api/timer/timer2
 
 ### Get Custom Timer2
 GET http://{{myhost}}/actuator/metrics/my.timer2
+
+### Call Timer Endpoint3(@Timed)
+@sleepSeconds=4
+GET http://{{myhost}}/api/timer/timer3/{{sleepSeconds}}
+
+### Get Custom Timer3(@Timed)
+GET http://{{myhost}}/actuator/metrics/my.timer3

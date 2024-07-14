@@ -1,10 +1,12 @@
 package com.boki.bokispringactuator1.timer;
 
+import io.micrometer.core.annotation.Timed;
 import io.micrometer.core.instrument.MeterRegistry;
 import io.micrometer.core.instrument.Timer;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -38,6 +40,15 @@ public class TimerController {
         Thread.sleep(2000);
 
         sample.stop(meterRegistry.timer("my.timer2"));
+
+        return "ok";
+    }
+
+    @Timed("my.timer3")
+    @GetMapping("/timer3/{sleepSeconds}")
+    public String timer3(@PathVariable("sleepSeconds") int sleepSeconds) throws InterruptedException {
+
+        Thread.sleep(sleepSeconds * 1000L);
 
         return "ok";
     }
