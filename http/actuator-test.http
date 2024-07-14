@@ -52,3 +52,9 @@ GET http://{{myhost}}/actuator/metrics/my.function.counter
 
 ### Custom Metric Counter(MeterBinder)
 GET http://{{myhost}}/actuator/metrics/my.function.counter2
+
+### Call AOP Count EndPoint
+GET http://{{myhost}}/counter/counted
+
+### Custom Metric Counter(AOP)
+GET http://{{myhost}}/actuator/metrics/my.counter.counted
