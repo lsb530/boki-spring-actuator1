@@ -44,5 +44,8 @@ GET http://{{myhost}}/actuator/metrics/my.product
 ### Call Count EndPoint
 GET http://{{myhost}}/counter/req
 
-### Custom Metric Counter
+### Custom Metric Counter(Counter.builder)
 GET http://{{myhost}}/actuator/metrics/my.http.request
+
+### Custom Metric Counter(FunctionCounter.builder)
+GET http://{{myhost}}/actuator/metrics/my.function.counter
