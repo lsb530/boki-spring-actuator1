@@ -1,6 +1,11 @@
 spring:
   application:
     name: boki-spring-actuator1
+  boot:
+    admin:
+      client:
+        url:
+          - http://127.0.0.1:9090
 management:
   endpoints: # 노출
     web:
