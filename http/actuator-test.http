@@ -104,3 +104,6 @@ GET http://{{myhost}}/actuator/metrics/my.timer3
 
 ### Get Custom Timer4(FunctionTimer)
 GET http://{{myhost}}/actuator/metrics/my.timer4
+
+### Get Custom Timer5(MeterBinder)
+GET http://{{myhost}}/actuator/metrics/my.timer5
