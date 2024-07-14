@@ -82,3 +82,9 @@ GET http://{{myhost}}/actuator/metrics/my.queue.size
 
 ### Get Custom Gauge2
 GET http://{{myhost}}/actuator/metrics/my.queue2.size
+
+### Call Timer Endpoint
+GET http://{{myhost}}/api/timer/timer
+
+### Get Custom Timer
+GET http://{{myhost}}/actuator/metrics/my.timer
