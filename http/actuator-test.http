@@ -41,7 +41,7 @@ GET http://{{myhost}}/actuator/metrics/my.stock
 ### Custom Metric Endpoint2
 GET http://{{myhost}}/actuator/metrics/my.product
 
-### Call Count EndPoint
+### Call Count Endpoint
 GET http://{{myhost}}/counter/req
 
 ### Custom Metric Counter(Counter.builder)
@@ -53,7 +53,7 @@ GET http://{{myhost}}/actuator/metrics/my.function.counter
 ### Custom Metric Counter(MeterBinder)
 GET http://{{myhost}}/actuator/metrics/my.function.counter2
 
-### Call AOP Count EndPoint
+### Call AOP Count Endpoint
 GET http://{{myhost}}/counter/counted
 
 ### Custom Metric Counter(AOP)
@@ -61,3 +61,18 @@ GET http://{{myhost}}/actuator/metrics/my.counter.counted
 
 ### Get JVM memory max with heap area by using tag
 GET http://{{myhost}}/actuator/metrics/jvm.memory.max?tag=area:heap
+
+### Call Tag push Endpoint
+GET http://{{myhost}}/api/tag/push
+
+### Call Tag pop Endpoint
+GET http://{{myhost}}/api/tag/pop
+
+### Get Custom Queue Counter Endpoint
+GET http://{{myhost}}/actuator/metrics/my.queue.counter
+
+### Get Custom Queue Counter Endpoint with push type by using tag
+GET http://{{myhost}}/actuator/metrics/my.queue.counter?tag=type:push
+
+### Get Custom Queue Counter Endpoint with pop type by using tag
+GET http://{{myhost}}/actuator/metrics/my.queue.counter?tag=type:pop
