@@ -88,3 +88,9 @@ GET http://{{myhost}}/api/timer/timer
 
 ### Get Custom Timer
 GET http://{{myhost}}/actuator/metrics/my.timer
+
+### Call Timer Endpoint2
+GET http://{{myhost}}/api/timer/timer2
+
+### Get Custom Timer2
+GET http://{{myhost}}/actuator/metrics/my.timer2

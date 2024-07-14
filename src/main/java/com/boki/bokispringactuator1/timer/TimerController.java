@@ -1,5 +1,6 @@
 package com.boki.bokispringactuator1.timer;
 
+import io.micrometer.core.instrument.MeterRegistry;
 import io.micrometer.core.instrument.Timer;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -15,6 +16,8 @@ public class TimerController {
     @Qualifier("myTimer")
     private final Timer myTimer;
 
+    private final MeterRegistry meterRegistry;
+
     @GetMapping("/timer")
     public String timer() {
         myTimer.record(() -> {
@@ -24,6 +27,18 @@ public class TimerController {
                 throw new RuntimeException(e);
             }
         });
+        return "ok";
+    }
+
+    @GetMapping("/timer2")
+    public String timer2() throws InterruptedException {
+        Timer.Sample sample = Timer.start(meterRegistry);
+
+        // biz logic...
+        Thread.sleep(2000);
+
+        sample.stop(meterRegistry.timer("my.timer2"));
+
         return "ok";
     }
 }
