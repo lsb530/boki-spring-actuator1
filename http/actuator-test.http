@@ -76,3 +76,9 @@ GET http://{{myhost}}/actuator/metrics/my.queue.counter?tag=type:push
 
 ### Get Custom Queue Counter Endpoint with pop type by using tag
 GET http://{{myhost}}/actuator/metrics/my.queue.counter?tag=type:pop
+
+### Get Custom Gauge1
+GET http://{{myhost}}/actuator/metrics/my.queue.size
+
+### Get Custom Gauge2
+GET http://{{myhost}}/actuator/metrics/my.queue2.size
