@@ -58,3 +58,6 @@ GET http://{{myhost}}/counter/counted
 
 ### Custom Metric Counter(AOP)
 GET http://{{myhost}}/actuator/metrics/my.counter.counted
+
+### Get JVM memory max with heap area by using tag
+GET http://{{myhost}}/actuator/metrics/jvm.memory.max?tag=area:heap
