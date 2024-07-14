@@ -49,3 +49,6 @@ GET http://{{myhost}}/actuator/metrics/my.http.request
 
 ### Custom Metric Counter(FunctionCounter.builder)
 GET http://{{myhost}}/actuator/metrics/my.function.counter
+
+### Custom Metric Counter(MeterBinder)
+GET http://{{myhost}}/actuator/metrics/my.function.counter2
