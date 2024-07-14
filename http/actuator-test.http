@@ -101,3 +101,6 @@ GET http://{{myhost}}/api/timer/timer3/{{sleepSeconds}}
 
 ### Get Custom Timer3(@Timed)
 GET http://{{myhost}}/actuator/metrics/my.timer3
+
+### Get Custom Timer4(FunctionTimer)
+GET http://{{myhost}}/actuator/metrics/my.timer4
